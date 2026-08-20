@@ -1,35 +1,6 @@
-# Elevate-Labs-Day6-Task6
-
 # Task 6 — Sales Trend Analysis Using SQL Aggregations
 
-## 🎯 Objective
-
-The objective of this project was to analyse monthly sales performance by examining revenue trends and order volumes using SQL aggregation functions, grouping operations, and time-based analysis techniques.
-
-## 📊 Dataset Used
-
-- Online Sales Dataset
-
-## 🛠️ Tools Used
-
-- MySQL Workbench
-- SQL
-- CSV Dataset Import
-
-## 🔬 Work Performed
-
-- Imported and structured the online sales dataset in MySQL.
-- Converted text-based order dates into SQL date format.
-- Extracted month and year information from order dates.
-- Used aggregate functions such as `SUM()` and `COUNT(DISTINCT)`.
-- Performed monthly revenue and order volume analysis.
-- Compared sales performance across **2023 and 2024**.
-- Identified top-performing and low-performing months.
-- Analysed revenue by city, product, and customer.
-- Created SQL views for summarised reporting and analysis.
-- Wrote **20 SQL queries** covering date conversion, monthly aggregation, year-on-year comparison, and view creation.
-
-## 🔍 Key Insights
+## 🔍 Key Findings
 
 - Dataset contained **500 orders**, **20 products**, **10 cities**, and **100 customers**.
 - Generated **₹2,61,178** in total revenue across 2023–2024.
@@ -40,6 +11,33 @@ The objective of this project was to analyse monthly sales performance by examin
 - **HDD (₹18,900)**, **Mouse (₹18,734)**, and **Smartphone (₹18,464)** generated the highest revenue.
 - All **100 customers were repeat buyers**, averaging **5 orders each**.
 
+## 🎯 Objective
+
+The objective of this project was to analyse monthly sales performance by examining revenue trends and order volumes using SQL aggregation functions, grouping operations, and time-based analysis techniques.
+
+## 📊 Dataset Used
+
+- Online Sales Dataset — **500 orders**, 7 fields, 2023–2024
+
+## 🛠️ Tools Used
+
+- MySQL Workbench
+- SQL
+- CSV Dataset Import
+
+## 🔬 Work Performed
+
+- Imported and structured the online sales dataset in MySQL.
+- Wrote **20 SQL queries** covering date conversion, monthly aggregation, year-on-year comparison, and view creation.
+- Converted text-based order dates into SQL date format using `STR_TO_DATE()`.
+- Extracted month and year information into indexed columns via `ALTER TABLE` and `UPDATE`.
+- Used aggregate functions such as `SUM()` and `COUNT(DISTINCT)`.
+- Performed monthly revenue and order volume analysis.
+- Compared sales performance across **2023 and 2024**.
+- Identified top-performing and low-performing months.
+- Analysed revenue by city, product, and customer.
+- Created SQL views for summarised reporting and analysis.
+
 ## 📁 Files Included
 
 - SQL Script File (`.sql`)
@@ -49,4 +47,4 @@ The objective of this project was to analyse monthly sales performance by examin
 
 ## 📈 Outcome
 
-Applied SQL aggregation, grouping, filtering, and time-series analysis techniques to uncover sales trends, identify top-performing periods, and generate actionable business insights from transactional sales data.
+Applied SQL aggregation, grouping, filtering, and time-series techniques to quantify a 9.2% year-on-year revenue increase, isolate the value-versus-volume driver behind that growth, and rank markets and products by contribution.
